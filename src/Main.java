@@ -6,7 +6,7 @@ public class Main {
         System.out.println(fridge.getTemp());
 
         Math math1 = new Math(21);
-        Math math2 = new Math(21);
+        Math math2 = new Math(2);
         System.out.println(math1.equals(math2));
     }
 }
@@ -46,8 +46,9 @@ class Fridge{
     }
 
 
+@SuppressWarnings("EqualsWhichDoesntCheckParameterClass")
 class Math{
-    private int answer;
+    private final int answer;
 
     public Math(int answer){
         this.answer = answer;
